@@ -5,7 +5,6 @@ const router = Router();
 
 router.get('/temperament', getAllTemperaments)
 
-console.log(getAllTemperaments)
-
 
 module.exports = router;
+

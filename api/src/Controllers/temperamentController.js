@@ -1,48 +1,80 @@
 const {Temperament} = require('../db');
-const axios = require('axios');
-const {Op} = require('sequelize');
-const {BREEDS_URL, BREEDS_QUERY} = require('../../constants');
-const {v4 : uuidv4} = require('uuid');
-/*
-temperaments
---traer todos los temperam
---agregar un temperam (body)
---traer un temperam (id)
---editar un temperam (id, body)
---borrar un temperam (id)
-
-*/
 
 
-function getAllTemperaments(request, response, next){
-    const {temperament} = request.query;
-    //pregunto si la tabla esta vacia
-    //si esta vacia ---> get a la api externa ---> .data.map
-    //si no esta vacia ---> findAll a mi BD
-    //con findOrCreate lo busco en mi BD, si no esta lo traigo de la
-    //api externa y lo creo en mi BD
-    //if(!temperament) return response.sendStatus(500);
-    
-    return Temperament.findOrCreate({
-        where: {
-            temperament: {
-                [Op.substring]: `${temperament}`,
-              }
-        },
-        defaults: {
-            temperament: axios.get(`${BREEDS_URL}`)
+function allTemperaments(arrayStr){//array de strings con los temperamentos de todas las razas
+    let arrayTemp = [];
+        
+    for (let i = 0; i < arrayStr?.length; i++) {
+        
+        let element = arrayStr[i]?.split(', ');
+        
+        for (let j = 0; j < element?.length; j++) {
+        
+            arrayTemp.push(element[j]);
             
-            .then((temp)=> {
-                temp.data.filter((t)=> t.temperament === temperament) 
-                console.log(temp) 
-            } )
-            .catch((err)=> next(err))
         }
-    })
-    .then((tempApi) => response.send(tempApi))
+        
+    }
+    return arrayTemp;// arrayTemp es un array de temperamentos repetidos
+}
+
+function filterDuplicates(arrayAllTemp){
+    let map = {};
+    let arrayFiltered = [];
     
+    for (let index = 0; index < arrayAllTemp.length; index++) {
+    
+        if(!(arrayAllTemp[index] in map)){
+    
+            map[arrayAllTemp[index]] = true;
+    
+            arrayFiltered.push(arrayAllTemp[index]);
+        };
+        
+    }
+    return arrayFiltered;//arrayFiltered es un array con los temperamentos sin repetir
+}
+
+function getAllTemperaments(_request, response, next){
+    
+    Temperament.findAll()
+    .then((temp) => {
+        
+        return response.send(temp)
+    })
+        
     .catch((err) => next(err));
 }
+    
+    
+    
+
+module.exports = {
+    allTemperaments,
+    filterDuplicates,
+    getAllTemperaments,
+}
+
+
+
+
+    
+    
+    
+    
+
+    
+    
+        
+   
+
+
+
+
+
+
+
+    
     
     
     
@@ -58,21 +90,8 @@ function getAllTemperaments(request, response, next){
     
     
     
-    // const {temperament} = request.query
-    // const temperamentApi = axios.get(`${BREEDS_URL}`);
-    // const temperamentMine = Temperament.findAll()
-    // Promise.all([temperamentApi, temperamentMine])
-    //     .then ((res) => {
-    //         let [temperamentApiResponse, temperamentMineResponse] = res;
-    //         return response.send(
-    //             temperamentMineResponse.concat(temperamentApiResponse.data)
-    //         )
-    //     })
-    //     .catch((err) => next(err));
+    
     
 
 
-module.exports = {
-    getAllTemperaments,
     
-}

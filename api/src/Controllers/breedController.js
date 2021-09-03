@@ -52,16 +52,16 @@ function getAllBreeds(request, response, next){
         Promise.all([breedApi, breedMine])
         .then ((res) => {
             let [breedApiResponse, breedMineResponse] = res;
-            //console.log(breedMineResponse)
             return response.send(
                 breedMineResponse.concat(breedApiResponse.data)
             )
-            
         })
+            
         .catch((err) => next(err));
     }
-
+            
 }
+
 
 
 function getById(request, response, next){
@@ -83,25 +83,25 @@ function getById(request, response, next){
         Breed.findByPk(id)
         .then((b) => {
             response.send(b);
-            //console.log("busqueda por id:  " + b)
-                
-        })
             
+        })
+                
         .catch((err) => next(err));
     }
+            
         
 }
     
-    
-    
-    
-    
-
 module.exports = {
     getAllBreeds,
     addBreed,
     getById
 }
+    
+    
+    
+    
+
 
 
     

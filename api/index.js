@@ -19,12 +19,44 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
 const { conn } = require('./src/db.js');
+const {allTemperaments, filterDuplicates} = require("../api/src/Controllers/temperamentController");
+const axios = require('axios');
+const {BREEDS_URL} = require('./constants');
+const {Temperament} = require('./src/db');
 
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   //pruebo la conexion con la base de datos
   console.log('conexion con la base de datos correcta')
-  server.listen(3001, () => {
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
-  });
-});
+  //traigo todos los temperamentos de la api externa
+  axios.get(`${BREEDS_URL}`)
+            
+    .then((temp)=> {
+               
+      let arrayStr = temp.data.map(el => el.temperament);
+                
+      let arrayAllTemp = allTemperaments(arrayStr);
+                
+      let arrayUniqueTemp = filterDuplicates(arrayAllTemp);
+
+      Temperament.bulkCreate(arrayUniqueTemp.map((t)=> {
+        
+        return {
+          name: t
+
+        }
+      }))
+                
+      server.listen(3001, () => {
+                
+        console.log('%s listening at 3001'); // eslint-disable-line no-console
+                   
+      });
+
+    })
+    
+})
+            
+          
+       
+
