@@ -23,6 +23,10 @@ server.use((req, res, next) => {
 });
 
 server.use('/', routes);
+//probando el servidor
+server.get('/', (req, res) => {
+  res.send('Hola soy una prueba')
+}) 
 
 // Error catching endware.
 server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
