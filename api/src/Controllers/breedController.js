@@ -21,7 +21,7 @@ function getAllBreeds(request, response, next){
     const {name, API_KEY} = request.query;
     
     if(name){
-        const breedApi = axios.get(`${BREEDS_QUERY}?name=${name}${API_KEY}`);
+        const breedApi = axios.get(`${BREEDS_QUERY}?name=${name}?api_key=${API_KEY}`);
         const breedMine = Breed.findAll({
             include: [
                 {
@@ -47,7 +47,7 @@ function getAllBreeds(request, response, next){
         })
         .catch((err) => next(err));
     }else{
-        const breedApi = axios.get(`${BREEDS_URL}`);
+        const breedApi = axios.get(`${BREEDS_URL}?api_key=${API_KEY}`);
         const breedMine = Breed.findAll();
         Promise.all([breedApi, breedMine])
         .then ((res) => {
@@ -70,7 +70,7 @@ function getById(request, response, next){
     if(!id) {
         return response.sendStatus(500);
     }else if(id < 265) {
-        axios.get(`${BREEDS_URL}`)
+        axios.get(`${BREEDS_URL}?api_key=${API_KEY}`)
             .then ((b) => {
                 let findId = b.data.filter((idApi)=> idApi.id === parseInt(id));
                 response.send(findId)

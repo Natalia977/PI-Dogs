@@ -23,19 +23,8 @@ module.exports = (sequelize) => {
     },
     life_span: {
       type: DataTypes.STRING
-    },
-    bred_for:{
-      type: DataTypes.STRING,
-    },
-    breed_group:{
-      type: DataTypes.STRING
-    },
-    origin:{
-      type: DataTypes.STRING
-    },
-    image_url: {
-      type: DataTypes.STRING
-    },
+    }
+   
 
   });
 };
