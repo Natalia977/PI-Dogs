@@ -6,9 +6,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #8a8b8b;
+    border-radius: 6px;
+    border: 2px solid #2b2b2c;
+  }
+  .boton_personalizado:hover{
+    color: #aeb2b4;
+    background-color: #ffffff;
+  }
+
+
