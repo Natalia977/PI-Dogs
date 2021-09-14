@@ -1,4 +1,5 @@
 import React from "react";
+import './Paginado.css';
 
 export default function Paginado({breedsPerPage, allBreeds, paginado}){
     const pageNumbers = [];
@@ -8,12 +9,12 @@ export default function Paginado({breedsPerPage, allBreeds, paginado}){
     }
 
     return (
-        <nav>
-            <ul className='paginado'>
+        <nav className='paginado'>
+            <ul>
                 {pageNumbers?.map((number) => {
                     return(
                         
-                        <button onClick={()=> paginado(number)} key={number}>{number}</button>
+                        <button onClick={()=> paginado(number)} key={number} className='small-btn'>{number}</button>
 
                     
                     )

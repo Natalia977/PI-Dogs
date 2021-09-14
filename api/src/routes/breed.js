@@ -4,11 +4,12 @@ const {getAllBreeds, addBreed, getById} = require('../Controllers/breedControlle
 const router = Router();
 
 
-router.get('/breeds', getAllBreeds);
+router.get('/', getAllBreeds);
+router.get('/:id', getById)
 
-router.post('/breed', addBreed);
+router.post('/', addBreed);
 
-router.get('/breeds/:id', getById);
+
 
 module.exports = router;
 
