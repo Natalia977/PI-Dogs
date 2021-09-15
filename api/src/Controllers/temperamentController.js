@@ -47,13 +47,13 @@ function getAllTemperaments(_request, response, next){
 }
     
     
-    
-
 module.exports = {
     allTemperaments,
     filterDuplicates,
     getAllTemperaments,
 }
+    
+
 
 
 

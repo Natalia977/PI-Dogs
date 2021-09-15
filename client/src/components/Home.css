@@ -63,7 +63,7 @@
     flex-direction: row;
     justify-content: space-around;
     
-    padding: 10px;
+    padding: 8px;
 }
 
 .allbreeds{
@@ -71,8 +71,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    
-    padding: 10px;
+    margin-left: 40px;
+    padding: 8px;
 }
 
 .temp{
@@ -80,8 +80,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
-    
-    padding: 10px;
+    margin-left: 40px;
+    padding: 8px;
 }
 
 .order{
@@ -90,7 +90,7 @@
     flex-direction: row;
     justify-content: space-around;
     
-    padding: 10px;
+    padding: 8px;
 }
 
 .aZ{
@@ -98,8 +98,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-
-    padding: 10px;
+    margin-right: 50px;
+    padding: 8px;
 }
 
 .minMax{
@@ -108,7 +108,7 @@
     flex-direction: row;
     justify-content: space-between;
     
-    padding: 10px;
+    padding: 8px;
 }
 
 .paginado{

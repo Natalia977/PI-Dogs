@@ -9,11 +9,7 @@ const {v4 : uuidv4} = require('uuid');
 
 function addBreed(request, response, next){
     const id = uuidv4();
-    // const breedBody = {...request.body, id};
-    // if(!breedBody) return response.sendStatus(500);
-    // return Breed.create(breedBody)
-    //     .then((b) => response.send(b))
-    //     .catch((err) => next(err));
+    
     let {
         name,
         height,
@@ -134,9 +130,7 @@ function getById(request, response, next){
     const {id} = request.params;
     
 
-    // if(!id) {
-    //     return response.sendStatus(500);
-    // }else 
+    
     if(id < 265) {
         axios.get(`${BREEDS_URL}`)
             .then ((b) => {

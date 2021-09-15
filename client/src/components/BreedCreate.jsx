@@ -116,6 +116,7 @@ export default function BreedCreate(){
                     type="text"
                     value={input.name}
                     name="name"
+                    required
                     placeholder="Name"
                     onChange={(e) => handleChange(e)}
                     className='form__input'
@@ -132,7 +133,9 @@ export default function BreedCreate(){
                     type="text"
                     value={input.height}
                     name="height"
-                    
+                    pattern="[0-9]{1,2}[ ][-][ ][0-9]{1,2}"
+                    required
+                    title="Height must have a maximum value followed by space - space ( - ) and a minimum value"
                     placeholder="Height... e.g: 20 - 35"
                     onChange={(e) => handleChange(e)}
                     className='form__input'
@@ -151,7 +154,9 @@ export default function BreedCreate(){
                     type="text"
                     value={input.weight}
                     name="weight"
-                    
+                    pattern="[0-9]{1,2}[ ][-][ ][0-9]{1,2}"
+                    required
+                    title="Weight must have a maximum value followed by space - space ( - ) and a minimum value"
                     placeholder="Weight... e.g: 1 - 95"
                     onChange={(e) => handleChange(e)}
                     className='form__input'
@@ -170,10 +175,13 @@ export default function BreedCreate(){
                     type="text"
                     value={input.life_span}
                     name="life_span"
-                    
+                    pattern="[0-9]{1,2}[ ][-][ ][0-9]{1,2}"
+                    required
+                    title="Life span must have a maximum value followed by space - space ( - ) and a minimum value"
                     placeholder="Life span... e.g: 5 - 16"
                     onChange={(e)=> handleChange(e)}
                     className='form__input'
+                    
 
                     />
                     
