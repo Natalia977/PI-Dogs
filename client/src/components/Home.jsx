@@ -159,6 +159,7 @@ export default function Home(){
                                  temperament={el.temperament} 
                                  weight={el.weight.metric? el.weight.metric : el.weight } 
                                  life_span={el.life_span}
+                                 origin={el.origin}
                                  image={el.image? el.image.url || el.image : ('https://cdn2.thedogapi.com/images/'+ el.reference_image_id +'.jpg')}
                                  key={el.id}/>
                                </Link>

@@ -33,6 +33,7 @@ export default function Detail(props){
                         <h3>Height: {breedDetails[0].height.metric? breedDetails[0].height.metric : breedDetails.height} cm</h3>
                         <h3>Weight: {breedDetails[0].weight.metric? breedDetails[0].weight.metric : breedDetails.weight} kg</h3>
                         <h3>Life_span: {breedDetails[0].life_span? breedDetails[0].life_span : breedDetails.life_span}</h3>
+                        <h4>Origin: {breedDetails[0].origin} </h4>
                         <h4>Temperament: {breedDetails[0].temperament? breedDetails[0].temperament : breedDetails.temperament}</h4>
                         </div>
 

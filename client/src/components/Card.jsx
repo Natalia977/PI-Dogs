@@ -1,7 +1,7 @@
 import React from "react";
 import './Card.css';
 
-export default function Card({name, temperament, weight, image, life_span, id}){
+export default function Card({name, temperament, weight, image, life_span, origin, id}){
     return (
         <div key={id} className='card-container'>
             
@@ -15,6 +15,7 @@ export default function Card({name, temperament, weight, image, life_span, id}){
                 <h5>{temperament}</h5>
                 <h5>Weight: {weight} kg</h5>
                 <h5>Life span: {life_span}</h5>
+                <h5>Origin: {origin}</h5>
 
             </div>  
                 
