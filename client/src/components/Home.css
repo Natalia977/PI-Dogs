@@ -8,7 +8,8 @@
     /* background-image: url(https://thumbs.dreamstime.com/b/modelo-incons%C3%BAtil-de-las-huellas-verdes-del-perro-96804341.jpg); */
     /* background-image: url(https://p4.wallpaperbetter.com/wallpaper/546/142/546/background-bright-close-up-environment-wallpaper-preview.jpg); */
     /* background-image: url(https://previews.123rf.com/images/poznyakov/poznyakov0910/poznyakov091000379/5722067-grupo-fondo-hoja-de-oto%C3%B1o-de-color-naranja-al-aire-libre-.jpg); */
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU); */
+    background-image: url(https://st3.depositphotos.com/29178032/i/600/depositphotos_317284121-stock-photo-natural-beige-marble-texture-skin.jpg);
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -46,8 +47,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 16px;
-    border:solid;
-    border-color: #505050;
+    /* border:solid;
+    border-color: #505050; */
     background-color:transparent;
     
     
@@ -146,7 +147,7 @@
 .titles{
     text-align: center;
     justify-content: center;
-    color: rgb(132, 165, 55);
+    color: #f79e94;
     background:transparent;
     font-family: fantasy;
     font-size: 35px;
@@ -161,9 +162,9 @@ h1{
 }
 
 .nav-btn2{
-    background-color: rgb(90, 104, 59); 
+    background-color: #f79e94; 
     border-radius: 8px;
-    color: white;
+    color: rgb(51, 51, 49);
     padding: 8px 16px;
     text-align: center;
     text-decoration: none;

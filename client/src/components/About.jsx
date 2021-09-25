@@ -7,7 +7,7 @@ export default function About(){
         
         <div className='main-about'>
 
-            <div className='about-container'>
+            <div>
                 <h2>Hi! I'm Natalia Suarez</h2><br />
                 <h2>I'm from Catamarca, Argentina</h2><br />
                 <p>This is my first App and my individual Henry Bootcamp project.</p>
@@ -15,7 +15,7 @@ export default function About(){
                 
             </div>
                 
-            <Link to='/home'><button className='create-btn'>Go back home</button></Link>
+            <Link to='/home'><a className='title'>Go back home</a></Link>
                 
                 
         </div>

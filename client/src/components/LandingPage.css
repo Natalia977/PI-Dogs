@@ -28,7 +28,7 @@
     margin-top: 50px;
     margin-bottom: 500px;
     margin-left: 50px;
-    color:rgb(132, 165, 55);
+    color: #f79e94;
     background: transparent;
     width: 100%;
     font-family: fantasy;
@@ -48,7 +48,7 @@
 
 .enter-btn{
     margin-top: 40px;
-    background-color: rgb(132, 165, 55); 
+    background-color: #f79e94; 
     border-radius: 8px;
     color:rgb(51, 51, 49);
     padding: 18px 36px;

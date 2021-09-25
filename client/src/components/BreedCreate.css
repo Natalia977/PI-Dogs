@@ -1,7 +1,8 @@
 *{margin: 0; padding: 0;}
 .breed-main-container{
     /* background-image: url(https://us.123rf.com/450wm/nalinn/nalinn1504/nalinn150401335/38908450-impresiones-de-la-pata-de-animal-de-fondo-sin-fisuras-con-la-pata-imprime-negro-y-cenizas.jpg?ver=6); */
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU);
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU); */
+    background-image: url(https://st3.depositphotos.com/29178032/i/600/depositphotos_317284121-stock-photo-natural-beige-marble-texture-skin.jpg);
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -27,7 +28,7 @@
 
 .breed-titles{
 
-color: rgb(132, 165, 55);
+color: #f79e94;
 background:transparent;
 font-family: fantasy;
 font-size: 40px;
@@ -134,7 +135,7 @@ text-shadow: -4px -4px 4px rgb(66, 66, 63), 4px -4px 4px rgb(66, 66, 63), -4px 4
 .delete-container{
     display: flex;
     flex-wrap: wrap;
-
+    justify-content:space-evenly;
     
     align-items:center;
     color: rgb(148, 148, 145);
@@ -144,9 +145,9 @@ text-shadow: -4px -4px 4px rgb(66, 66, 63), 4px -4px 4px rgb(66, 66, 63), -4px 4
 }
 
 .create-btn{
-    background-color: rgb(90, 104, 59); 
+    background-color: #f79e94; 
     border-radius: 8px;
-    color: white;
+    color: rgb(51, 51, 49);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -162,9 +163,9 @@ text-shadow: -4px -4px 4px rgb(66, 66, 63), 4px -4px 4px rgb(66, 66, 63), -4px 4
 .delete-btn{
     margin-top: 5px;
     margin-bottom: 10px;
-    background-color: rgb(90, 104, 59); 
+    background-color: #f79e94; 
     border-radius: 8px;
-    color: white;
+    color: rgb(51, 51, 49);
     padding: 3px 6px;
     text-align: center;
     text-decoration: none;

@@ -80,18 +80,18 @@ export default function Home(){
                     <h1>DF!</h1>
                 </div>
                 <Link to='/about'>
-                    <button className='nav-btn2'>
+                    <a className='titles'>
                          About
-                    </button>
+                    </a>
                 
+                </Link>
+                <Link to='/breed'>
+                    <a className='titles'>Create your doggy</a>    
                 </Link>
                 <button className='nav-btn2' onClick={e => {handleClick(e)}}>
                     Reload all breeds
                 </button>
                 
-                <Link to='/breed'>
-                    <button className='nav-btn2'>Create your doggy</button>    
-                </Link>
                 
                 <SearchBar/>
 

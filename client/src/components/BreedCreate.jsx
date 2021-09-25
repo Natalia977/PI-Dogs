@@ -211,13 +211,13 @@ export default function BreedCreate(){
 
                         }
                     </select>
-                    <ul>{input.temperament.map(el => el + ", ")}</ul>
+                    <ul>{input.temperament.map(el => "  ---  " + el + "  ---  ")}</ul>
                 </div>
                 
                 <div className='delete-container'>
                     {input.temperament.map(el => 
                         <div>
-                            <p>{el}</p>
+                            
                             <button className='delete-btn' onClick={() => handleDelete(el)}>x</button>
                         </div>
 
