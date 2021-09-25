@@ -25,7 +25,7 @@ export default function Detail(props){
                 breedDetails.length?
                 <div className='card-container-detail'>
                     <div className='img-detail-container'>
-                        <img className='img-styles' src={breedDetails[0].image.url? breedDetails[0].image.url : breedDetails.image } alt="" />
+                        <img className='img-styles' height="200px" width="270px" src={breedDetails[0].image.url? breedDetails[0].image.url : breedDetails.image } alt="" />
 
                     </div>
                     <div className='data-breed-detail'>
@@ -33,7 +33,7 @@ export default function Detail(props){
                         <h3>Height: {breedDetails[0].height.metric? breedDetails[0].height.metric : breedDetails.height} cm</h3>
                         <h3>Weight: {breedDetails[0].weight.metric? breedDetails[0].weight.metric : breedDetails.weight} kg</h3>
                         <h3>Life_span: {breedDetails[0].life_span? breedDetails[0].life_span : breedDetails.life_span}</h3>
-                        <h4>Origin: {breedDetails[0].origin} </h4>
+                        <h4>Origin: {breedDetails[0].origin? breedDetails[0].origin : breedDetails.origin }  </h4>
                         <h4>Temperament: {breedDetails[0].temperament? breedDetails[0].temperament : breedDetails.temperament}</h4>
                         </div>
 
@@ -51,6 +51,7 @@ export default function Detail(props){
                         <h3>Height: {breedDetails.height} cm</h3>
                         <h3>Weight: {breedDetails.weight} kg</h3>
                         <h3>Life_span: {breedDetails.life_span}</h3>
+                        <h3>Origin: {breedDetails.origin}</h3>
                         <h4>Temperaments: {breedDetails.temperament}</h4>
                     </div>
                     

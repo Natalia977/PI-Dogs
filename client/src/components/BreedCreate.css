@@ -1,9 +1,10 @@
 *{margin: 0; padding: 0;}
 .breed-main-container{
-    background-image: url(https://us.123rf.com/450wm/nalinn/nalinn1504/nalinn150401335/38908450-impresiones-de-la-pata-de-animal-de-fondo-sin-fisuras-con-la-pata-imprime-negro-y-cenizas.jpg?ver=6);
+    /* background-image: url(https://us.123rf.com/450wm/nalinn/nalinn1504/nalinn150401335/38908450-impresiones-de-la-pata-de-animal-de-fondo-sin-fisuras-con-la-pata-imprime-negro-y-cenizas.jpg?ver=6); */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU);
     margin: 0;
     padding: 0;
-    
+    background-size: cover;
     overflow: hidden;
     height: 100vh;
     color: rgb(66, 66, 63);
@@ -26,7 +27,7 @@
 
 .breed-titles{
 
-color:rgb(148, 148, 145);
+color: rgb(132, 165, 55);
 background:transparent;
 font-family: fantasy;
 font-size: 40px;
@@ -43,11 +44,13 @@ text-shadow: -4px -4px 4px rgb(66, 66, 63), 4px -4px 4px rgb(66, 66, 63), -4px 4
     margin-left: 200px;
     margin-right: 200px;
 
-    background:rgb(148, 148, 145);
+    background:transparent;
     
     border: solid;
     border-color: rgb(36, 36, 35) ;
     border-radius: 8px;
+    border-color: rgb(92, 92, 90);
+  box-shadow: 8px 8px 14px rgb(51, 51, 49);
 }
 
 .form{
@@ -141,7 +144,7 @@ text-shadow: -4px -4px 4px rgb(66, 66, 63), 4px -4px 4px rgb(66, 66, 63), -4px 4
 }
 
 .create-btn{
-    background-color: rgb(92, 92, 90); 
+    background-color: rgb(90, 104, 59); 
     border-radius: 8px;
     color: white;
     padding: 15px 32px;
@@ -159,7 +162,7 @@ text-shadow: -4px -4px 4px rgb(66, 66, 63), 4px -4px 4px rgb(66, 66, 63), -4px 4
 .delete-btn{
     margin-top: 5px;
     margin-bottom: 10px;
-    background-color: rgb(92, 92, 90); 
+    background-color: rgb(90, 104, 59); 
     border-radius: 8px;
     color: white;
     padding: 3px 6px;

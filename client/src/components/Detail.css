@@ -1,7 +1,9 @@
 *{margin: 0; padding: 0;}
 
 .main-container-detail{
-    background-image: url(https://us.123rf.com/450wm/nalinn/nalinn1504/nalinn150401335/38908450-impresiones-de-la-pata-de-animal-de-fondo-sin-fisuras-con-la-pata-imprime-negro-y-cenizas.jpg?ver=6);
+    /* background-image: url(https://us.123rf.com/450wm/nalinn/nalinn1504/nalinn150401335/38908450-impresiones-de-la-pata-de-animal-de-fondo-sin-fisuras-con-la-pata-imprime-negro-y-cenizas.jpg?ver=6); */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU);
+    background-size: cover;
     display: flex;
     align-items:center;
     flex-direction: column;
@@ -9,7 +11,7 @@
     margin: 0;
     padding: 0;
     
-    height: 100vh;
+    height: 750px;
     color: rgb(66, 66, 63);
     
 }
@@ -18,10 +20,10 @@
   display: flex;
   flex-direction: column;
   width: 650px;
-  height: 550px;
+  height: 630px;
   justify-content:center;
   align-items: center;
-  background: #505050;
+  background: transparent;
   padding: 2px;
   box-sizing: border-box;
   border:solid;
@@ -36,8 +38,8 @@
 
 
 .img-detail-container{
-  width: 100%;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   margin-top: 2px;
   border-radius: 8px;
   overflow:hidden
@@ -90,7 +92,7 @@
 
 .go-back-btn{
     margin-top: 40px;
-    background-color: rgb(92, 92, 90); 
+    background-color: rgb(90, 104, 59); 
     border-radius: 8px;
     color: white;
     padding: 18px 36px;

@@ -77,14 +77,20 @@ export default function Home(){
             <nav className='nav'>
 
                 <div className='titles'>
-                    <h1>Just for doggy fans</h1>
+                    <h1>DF!</h1>
                 </div>
-                <button className='nav-btn' onClick={e => {handleClick(e)}}>
+                <Link to='/about'>
+                    <button className='nav-btn2'>
+                         About
+                    </button>
+                
+                </Link>
+                <button className='nav-btn2' onClick={e => {handleClick(e)}}>
                     Reload all breeds
                 </button>
                 
                 <Link to='/breed'>
-                    <button className='nav-btn'>Create your doggy</button>    
+                    <button className='nav-btn2'>Create your doggy</button>    
                 </Link>
                 
                 <SearchBar/>

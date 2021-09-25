@@ -1,0 +1,38 @@
+*{margin: 0; padding: 0;}
+
+.main-about{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+.about-container{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 310px;
+  background:transparent;
+  padding: 2px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border:double;
+  border-color: rgb(92, 92, 90);
+  box-shadow: 8px 8px 14px rgb(51, 51, 49);
+} 
+
+
+

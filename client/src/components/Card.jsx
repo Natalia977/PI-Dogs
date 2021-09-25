@@ -6,7 +6,7 @@ export default function Card({name, temperament, weight, image, life_span, origi
         <div key={id} className='card-container'>
             
             <div className='img-card-container'>
-                <img className='img-card-styles' src={image} alt=""/>
+                <img className='img-card-styles' src={image} height="200px" width="270px" alt=""/>
 
             </div>
 
@@ -16,6 +16,7 @@ export default function Card({name, temperament, weight, image, life_span, origi
                 <h5>Weight: {weight} kg</h5>
                 <h5>Life span: {life_span}</h5>
                 <h5>Origin: {origin}</h5>
+                    
 
             </div>  
                 
