@@ -18,11 +18,7 @@ export default function LandingPage(){
             </div>
 
             
-            {/* <div className='welcome-img'>
-                
-                <img className='img-styles' alt="" src="https://www.tiposde.com/wp-content/uploads/tipos-de-razas-de-perros-600x350.jpg"/>
-                    
-            </div> */}
+            
 
         </div>
                     

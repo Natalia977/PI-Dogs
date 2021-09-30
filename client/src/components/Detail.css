@@ -1,8 +1,7 @@
 *{margin: 0; padding: 0;}
 
 .main-container-detail{
-    /* background-image: url(https://us.123rf.com/450wm/nalinn/nalinn1504/nalinn150401335/38908450-impresiones-de-la-pata-de-animal-de-fondo-sin-fisuras-con-la-pata-imprime-negro-y-cenizas.jpg?ver=6); */
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2J6wE7xsdWMVrGGLqC0mb70QrRCTfFUch9A&usqp=CAU); */
+    
     background-image: url(https://st3.depositphotos.com/29178032/i/600/depositphotos_317284121-stock-photo-natural-beige-marble-texture-skin.jpg);
     background-size: cover;
     display: flex;

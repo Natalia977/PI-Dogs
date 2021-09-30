@@ -7,7 +7,7 @@ export default function About(){
         
         <div className='main-about'>
 
-            <div>
+            <div className='about-container'>
                 <h2>Hi! I'm Natalia Suarez</h2><br />
                 <h2>I'm from Catamarca, Argentina</h2><br />
                 <p>This is my first App and my individual Henry Bootcamp project.</p>
