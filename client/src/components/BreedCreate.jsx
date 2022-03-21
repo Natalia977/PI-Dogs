@@ -97,7 +97,7 @@ export default function BreedCreate(){
         <div className='breed-main-container'>
             <nav className='breed-nav'>
                 <div className='breed-titles'>
-                    <h1>Enter your puppy's data:</h1>
+                    <h1>Ingresar datos del nuevo trabajo:</h1>
                 </div>
                 <Link to='/home'><button className='create-btn'>Go back home</button></Link>
 

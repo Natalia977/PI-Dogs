@@ -1,21 +1,21 @@
-const { Breed, conn } = require('../../src/db.js');
+const { Persona, conn } = require('../../src/db.js');
 const { expect } = require('chai');
 
-describe('Breed model', () => {
+describe('Persona model', () => {
   before(() => conn.authenticate()
     .catch((err) => {
       console.error('Unable to connect to the database:', err);
     }));
   describe('Validators', () => {
-    beforeEach(() => Breed.sync({ force: true }));
-    describe('name', () => {
+    beforeEach(() => Persona.sync({ force: true }));
+    describe('nombre', () => {
       it('should throw an error if name is null', (done) => {
-        Breed.create({})
+        Persona.create({})
           .then(() => done(new Error('It requires a valid name')))
           .catch(() => done());
       });
       it('should work when its a valid name', () => {
-        Breed.create({ name: 'Dufy' });
+        Persona.create({ nombre: 'Natalia' });
       });
     });
   });

@@ -86,7 +86,7 @@ export default function Home(){
                 
                 </Link>
                 <Link to='/breed'>
-                    <a className='titles'>Create your doggy</a>    
+                    <a className='titles'>Crear nuevo pedido de trabajo</a>    
                 </Link>
                 <button className='nav-btn2' onClick={e => {handleClick(e)}}>
                     Reload all breeds
