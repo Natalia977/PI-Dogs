@@ -6,8 +6,8 @@ export default function LandingPage(){
     return(
         <div className = 'main-container'>
             <div className = 'welcome-title'>
-                <h1>MSL - ADMINISTRACION DE CONSORCIOS </h1>
-                <h4>CONTROL DE TRABAJOS DE MANTENIMIENTO</h4>
+                <h1>Welcome to Doggy Fans!</h1>
+                <h4>Do you want to know about dog breeds?</h4>
             
             </div>
             <div className='welcome-btn'>
