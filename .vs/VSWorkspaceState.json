@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\api",
+    "\\api\\src",
+    "\\api\\src\\Controllers",
+    "\\api\\src\\routes",
+    "\\client",
+    "\\client\\src",
+    "\\client\\src\\actions",
+    "\\client\\src\\components",
+    "\\client\\src\\reducer"
+  ],
+  "PreviewInSolutionExplorer": false
+}

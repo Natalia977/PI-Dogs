@@ -8,7 +8,7 @@ const initialState = {
 }
 
 
-function reducer(state = initialState, action){
+const reducer = (state = initialState, action) =>{
     switch (action.type) {
         case GET_BREEDS:
             return {

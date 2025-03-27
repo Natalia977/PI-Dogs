@@ -7,7 +7,7 @@ import Detail from './components/Detail';
 import About from './components/About';
   
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
     <div className="App">

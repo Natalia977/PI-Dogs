@@ -13,7 +13,6 @@ export default function Paginado({breedsPerPage, allBreeds, paginado}){
             <ul>
                 {pageNumbers?.map((number) => {
                     return(
-                        
                         <button onClick={()=> paginado(number)} key={number} className='small-btn'>{number}</button>
 
                     

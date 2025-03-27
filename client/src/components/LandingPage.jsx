@@ -12,7 +12,7 @@ export default function LandingPage(){
             </div>
             <div className='welcome-btn'>
                 <Link to='/home'>
-                    <button className='enter-btn'>Enter</button>
+                    <button className='enter-btn'>Come!</button>
                 </Link>
 
             </div>

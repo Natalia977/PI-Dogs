@@ -132,10 +132,12 @@ function getById(request, response, next){
 
     
     if(id < 265) {
+        console.log('en get by id')
         axios.get(`${BREEDS_URL}`)
-            .then ((b) => {
-                let findId = b.data.filter((idApi)=> idApi.id === parseInt(id));
-                response.send(findId)
+        .then ((b) => {
+            let findId = b.data.filter((idApi)=> idApi.id === parseInt(id));
+            console.log('en get by id findId', findId)
+            response.send(findId)
             })
             
             .catch((err) => next(err))

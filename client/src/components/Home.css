@@ -47,8 +47,8 @@
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 16px;
-    /* border:solid;
-    border-color: #505050; */
+    border: solid;
+    border-color: #d0af89; 
     background-color:transparent;
     
     
@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-left: 40px;
     padding: 8px;
 }
@@ -85,7 +85,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-left: 40px;
     padding: 8px;
 }
@@ -94,7 +94,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     
     padding: 8px;
 }
@@ -103,7 +103,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     margin-right: 50px;
     padding: 8px;
 }
@@ -112,7 +112,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     
     padding: 8px;
 }
@@ -180,6 +180,17 @@ h1{
     text-decoration: none;
 }
 
+.content-pagination {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+
+.pagination-label {
+    margin-right: 10px; 
+}
 
 
 

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {BREEDS_LOCAL_URL, GET_BREEDS, FILTER_BY_TEMPERAMENT, TEMPERAMENTS_LOCAL_URL, GET_TEMPERAMENTS, GET_BREEDS_BY_NAME, FILTER_CREATED_DB, GET_DETAILS, ORDER_BY_BREED, ORDER_BY_WEIGHT} from '../constants';
 
-export function getBreeds(){
+export const getBreeds = () => {
     return async function (dispatch){
         var json =  await axios.get(`${BREEDS_LOCAL_URL}`, {
 
@@ -13,14 +13,14 @@ export function getBreeds(){
     }
 }
 
-export function filterBreedsByTemperament(payload){
+export const filterBreedsByTemperament = (payload) => {
     return {
         type: FILTER_BY_TEMPERAMENT,
         payload
     }
 }
 
-export function getTemperaments(){
+export const getTemperaments = () => {
     return async function (dispatch){
         var json = await axios.get(`${TEMPERAMENTS_LOCAL_URL}`, {
 
@@ -32,7 +32,7 @@ export function getTemperaments(){
     }
 }
 
-export function postBreed(payload){
+export const postBreed = (payload) => {
     return async function(dispatch){
         const json = await axios.post(`${BREEDS_LOCAL_URL}`, payload);
         console.log(json);
@@ -40,7 +40,7 @@ export function postBreed(payload){
     }
 }
 
-export function getBreedsByName(name){
+export const getBreedsByName = (name) => {
     return async function(dispatch){
         try {
             var json = await axios.get(`${BREEDS_LOCAL_URL}?name=` + name, {
@@ -57,7 +57,7 @@ export function getBreedsByName(name){
     }
 }
 
-export function filterCreatedDb(payload){ 
+export const filterCreatedDb = (payload) => { 
     return {
         type: FILTER_CREATED_DB,
         payload

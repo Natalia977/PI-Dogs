@@ -28,9 +28,10 @@
   height: 310px;
   background:transparent;
   padding: 2px;
-  margin-top: 60px;
+  margin-top: 15%;
   margin-bottom: 6px;
   margin-right: 600px;
+  margin-left: 5%;
   text-align: center;
   color: wheat;
   font-family: sans-serif;
@@ -41,6 +42,7 @@
   border-color: rgb(92, 92, 90);
   box-shadow: 8px 8px 14px rgb(51, 51, 49);
 } 
+
 .title{
   display: flex;
     align-items:flex-start;

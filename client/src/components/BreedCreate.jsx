@@ -3,9 +3,10 @@ import {Link, useHistory} from 'react-router-dom';
 import {postBreed, getTemperaments} from '../actions/index';
 import { useDispatch, useSelector } from "react-redux";
 import './BreedCreate.css'
+import Footer from "./Footer";
 
 
-function validateForm(input){
+const validateForm = (input) => {
     let errors = {};
     if(!input.name){
         errors.name = "Name is required";
@@ -41,7 +42,7 @@ export default function BreedCreate(){
         temperament: [] 
     })
 
-    function handleChange(e){
+    const handleChange = (e) => {
         setInput({  
             ...input,
             [e.target.name] : e.target.value
@@ -56,7 +57,7 @@ export default function BreedCreate(){
         
     }
 
-    function handleSelect(e){
+    const handleSelect = (e) => {
         setInput({
               ...input,
             temperament: [...input.temperament, e.target.value] 
@@ -64,7 +65,7 @@ export default function BreedCreate(){
         
     }
 
-    function handleSubmit(e){
+    const handleSubmit = (e) => {
         e.preventDefault();
         console.log(input);
         dispatch(postBreed(input));
@@ -81,7 +82,7 @@ export default function BreedCreate(){
         history.push('/home') // redirecciona al home
     }
 
-    function handleDelete(el){
+    const handleDelete = (el) => {
         setInput({
             ...input,
             temperament: input.temperament.filter(temp => temp !== el)
@@ -242,6 +243,7 @@ export default function BreedCreate(){
             
 
         </div>
+        <Footer />
 
         </div>
         

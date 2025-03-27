@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 import Card from "./Card";
 import Paginado from "./Paginado";
 import SearchBar from "./SearchBar";
+import Footer from "./Footer";
 import './Home.css';
 
 
@@ -32,13 +33,13 @@ export default function Home(){
         dispatch(getTemperaments());
     }, [dispatch])
     
-    function handleClick(e){
+    const handleClick = (e) => {
         e.preventDefault();
         dispatch(getBreeds())
     }
 
     
-    function handleSelect(e){
+    const handleSelect = (e) =>{
         setInput({
               ...input,
             temperament: e.target.value 
@@ -48,18 +49,18 @@ export default function Home(){
         
     }
     
-    function handleOrderByBreed(e){
+    const handleOrderByBreed = (e) =>{
         e.preventDefault();
         dispatch(orderByBreed(e.target.value));
         setCurrentPage(1); //seteo la pagina en 1
         setOrden(`Ordenado ${e.target.value}`) //modifico el estado local para ordenar desde el front
     }
 
-    function handleFilterCreatedDb(e){
+    const handleFilterCreatedDb = (e) =>{
         dispatch(filterCreatedDb(e.target.value))
     }
 
-    function handleOrderByWeight(e){
+    const handleOrderByWeight = (e) => {
         e.preventDefault();
         dispatch(orderByWeight(e.target.value));
         setCurrentPage(1); //seteo la pagina en 1
@@ -97,7 +98,7 @@ export default function Home(){
 
             </nav>
                 
-                <div className='secondary-container'>
+            <div className='secondary-container'>
                     <div className='filter'>
                     <div className='allBreeds'>
                         <label>Filter Breeds by:</label>
@@ -142,21 +143,14 @@ export default function Home(){
                             
                     
                     
-                </div>   
+            </div>   
+             
                     
-                    
-            <div className='paginado'>
-                    
-                <Paginado
-                breedsPerPage={breedsPerPage}
-                allBreeds={allBreeds.length}
-                paginado={paginado}
-                />
-            </div>
+            
                     
             <div className='content-cards'>
                 {
-                    currentBreeds?.map((el) => {
+                   currentBreeds?.map((el) => {
                         return (
                             <div key={el.id} >
                                <Link className='link' to={"/home/" + el.id}>
@@ -173,12 +167,26 @@ export default function Home(){
                                     
                         )
                                         
-                    })
+                    }) 
+                    
                 }
-
-            </div>
-               
                 
+            </div>
+            
+            <div className="content-pagination">
+                <div className="pagination-label">
+                    <label>Page/s: </label>
+                </div>
+                <div className="pagination-component">
+                    <Paginado breedsPerPage={breedsPerPage} allBreeds={allBreeds.length} paginado={paginado} />
+                </div>
+            </div>
+            <div className='paginado'>
+                 <Link to='/'><a className="title">Go to Landing Page</a></Link>   
+            </div>
+            <div className="flex ">
+                <Footer />
+            </div>
 
         </div>
                 
